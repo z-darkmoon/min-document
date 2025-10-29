@@ -128,7 +128,7 @@ DOMElement.prototype.getAttributeNS =
 
 DOMElement.prototype.removeAttributeNS =
     function _Element_removeAttributeNS(namespace, name) {
-         var forbiddenKeys = ['__proto__', 'constructor', 'prototype'];
+        var forbiddenKeys = ['__proto__', 'constructor', 'prototype'];
         if (forbiddenKeys.includes(name)) {
             return;
         }
