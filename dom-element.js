@@ -133,7 +133,7 @@ DOMElement.prototype.removeAttributeNS =
             return;
         }
         var attributes = this._attributes[namespace];
-        if (attributes) {
+       if (attributes && Object.prototype.hasOwnProperty.call(attributes, name)) {
             delete attributes[name]
         }
     }
